@@ -4,94 +4,94 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4199489405455825836
-    second: lonk_walk and idle_0
+    second: walk_down_1
   - first:
       213: 7818870380998766407
-    second: lonk_walk and idle_1
+    second: walk_down_0
   - first:
       213: 430121306297511291
-    second: lonk_walk and idle_2
+    second: walk_down_2
   - first:
       213: -7436498394211703230
-    second: lonk_walk and idle_3
+    second: walk_down_3
   - first:
       213: 7336101229685762960
-    second: lonk_walk and idle_4
+    second: walk_down_4
   - first:
       213: 7147104057334793213
-    second: lonk_walk and idle_5
+    second: walk_down_5
   - first:
       213: 71161275992203736
-    second: lonk_walk and idle_6
+    second: walk_side_0
   - first:
       213: -2800817519930597349
-    second: lonk_walk and idle_7
+    second: walk_up_0
   - first:
       213: 3968942655698240512
-    second: lonk_walk and idle_8
+    second: walk_up_1
   - first:
       213: 2995873297723078041
-    second: lonk_walk and idle_9
+    second: walk_side_1
   - first:
       213: 599249679185649459
-    second: lonk_walk and idle_10
+    second: walk_side_2
   - first:
       213: -630622959653776542
-    second: lonk_walk and idle_11
+    second: walk_up_2
   - first:
       213: -8901670582188349258
-    second: lonk_walk and idle_12
+    second: walk_side_3
   - first:
       213: 7702308096081687612
-    second: lonk_walk and idle_13
+    second: walk_up_3
   - first:
       213: 639001369261359549
-    second: lonk_walk and idle_14
+    second: walk_side_4
   - first:
       213: -8830854431130173343
-    second: lonk_walk and idle_15
+    second: walk_up_4
   - first:
       213: 1061444265554218922
-    second: lonk_walk and idle_16
+    second: walk_side_5
   - first:
       213: 8624471844156393475
-    second: lonk_walk and idle_17
+    second: walk_up_5
   - first:
       213: -3348480833083253201
-    second: lonk_walk and idle_18
+    second: idle_front_0
   - first:
       213: 549338110009861564
-    second: lonk_walk and idle_19
+    second: idle_front_1
   - first:
       213: 3683367037902115358
-    second: lonk_walk and idle_20
+    second: idle_front_2
   - first:
       213: 8195122625500797817
-    second: lonk_walk and idle_21
+    second: idle_front_3
   - first:
       213: 9205846896055698974
-    second: lonk_walk and idle_22
+    second: idle_side_0
   - first:
       213: -431424196194926696
-    second: lonk_walk and idle_23
+    second: idle_side_1
   - first:
       213: -2843639765715278202
-    second: lonk_walk and idle_24
+    second: idle_side_2
   - first:
       213: 8812081692892519168
-    second: lonk_walk and idle_25
+    second: idle_side_3
   - first:
       213: 2013586525540863203
-    second: lonk_walk and idle_26
+    second: idle_back_0
   - first:
       213: 4476163295602093152
-    second: lonk_walk and idle_27
+    second: idle_back_1
   - first:
       213: 3754533843306988876
-    second: lonk_walk and idle_28
+    second: idle_back_2
   - first:
       213: -7299380774268489173
-    second: lonk_walk and idle_29
+    second: idle_back_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -193,7 +193,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lonk_walk and idle_0
+      name: walk_down_1
       rect:
         serializedVersion: 2
         x: 23
@@ -201,7 +201,7 @@ TextureImporter:
         width: 24
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_1
+      name: walk_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -222,7 +222,7 @@ TextureImporter:
         width: 23
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,7 +235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_2
+      name: walk_down_2
       rect:
         serializedVersion: 2
         x: 48
@@ -243,7 +243,7 @@ TextureImporter:
         width: 23
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_3
+      name: walk_down_3
       rect:
         serializedVersion: 2
         x: 72
@@ -264,7 +264,7 @@ TextureImporter:
         width: 23
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_4
+      name: walk_down_4
       rect:
         serializedVersion: 2
         x: 96
@@ -285,7 +285,7 @@ TextureImporter:
         width: 23
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_5
+      name: walk_down_5
       rect:
         serializedVersion: 2
         x: 120
@@ -306,7 +306,7 @@ TextureImporter:
         width: 23
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_6
+      name: walk_side_0
       rect:
         serializedVersion: 2
         x: 0
@@ -327,7 +327,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_7
+      name: walk_up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -348,7 +348,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_8
+      name: walk_up_1
       rect:
         serializedVersion: 2
         x: 27
@@ -369,7 +369,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_9
+      name: walk_side_1
       rect:
         serializedVersion: 2
         x: 25
@@ -390,7 +390,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_10
+      name: walk_side_2
       rect:
         serializedVersion: 2
         x: 50
@@ -411,7 +411,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_11
+      name: walk_up_2
       rect:
         serializedVersion: 2
         x: 54
@@ -432,7 +432,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_12
+      name: walk_side_3
       rect:
         serializedVersion: 2
         x: 75
@@ -453,7 +453,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,7 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_13
+      name: walk_up_3
       rect:
         serializedVersion: 2
         x: 81
@@ -474,7 +474,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,7 +487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_14
+      name: walk_side_4
       rect:
         serializedVersion: 2
         x: 100
@@ -495,7 +495,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_15
+      name: walk_up_4
       rect:
         serializedVersion: 2
         x: 108
@@ -516,7 +516,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,7 +529,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_16
+      name: walk_side_5
       rect:
         serializedVersion: 2
         x: 125
@@ -537,7 +537,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,7 +550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_17
+      name: walk_up_5
       rect:
         serializedVersion: 2
         x: 135
@@ -558,7 +558,7 @@ TextureImporter:
         width: 26
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -571,7 +571,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_18
+      name: idle_front_0
       rect:
         serializedVersion: 2
         x: 174
@@ -579,7 +579,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,7 +592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_19
+      name: idle_front_1
       rect:
         serializedVersion: 2
         x: 199
@@ -600,7 +600,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,7 +613,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_20
+      name: idle_front_2
       rect:
         serializedVersion: 2
         x: 224
@@ -621,7 +621,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,7 +634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_21
+      name: idle_front_3
       rect:
         serializedVersion: 2
         x: 249
@@ -642,7 +642,7 @@ TextureImporter:
         width: 24
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,7 +655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_22
+      name: idle_side_0
       rect:
         serializedVersion: 2
         x: 174
@@ -663,7 +663,7 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -676,7 +676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_23
+      name: idle_side_1
       rect:
         serializedVersion: 2
         x: 196
@@ -684,7 +684,7 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,7 +697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_24
+      name: idle_side_2
       rect:
         serializedVersion: 2
         x: 218
@@ -705,7 +705,7 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -718,7 +718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_25
+      name: idle_side_3
       rect:
         serializedVersion: 2
         x: 240
@@ -726,7 +726,7 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -739,7 +739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_26
+      name: idle_back_0
       rect:
         serializedVersion: 2
         x: 174
@@ -747,7 +747,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_27
+      name: idle_back_1
       rect:
         serializedVersion: 2
         x: 197
@@ -768,7 +768,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -781,7 +781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_28
+      name: idle_back_2
       rect:
         serializedVersion: 2
         x: 220
@@ -789,7 +789,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -802,7 +802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lonk_walk and idle_29
+      name: idle_back_3
       rect:
         serializedVersion: 2
         x: 243
@@ -810,7 +810,7 @@ TextureImporter:
         width: 22
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
