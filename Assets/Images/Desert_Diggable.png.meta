@@ -1,97 +1,115 @@
 fileFormatVersion: 2
-guid: ce5d9bbf643ba474d8abc4994b25544b
+guid: d51da0acde569be4fbaa8666f88a6a6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4199489405455825836
-    second: walk_down_1
+      213: 1676540356683065373
+    second: Desert_Diggable_0
   - first:
-      213: 7818870380998766407
-    second: walk_down_0
+      213: -4316038212873698896
+    second: Desert_Diggable_1
   - first:
-      213: 430121306297511291
-    second: walk_down_2
+      213: -4740482684517396111
+    second: Desert_Diggable_2
   - first:
-      213: -7436498394211703230
-    second: walk_down_3
+      213: 8073811132530893558
+    second: Desert_Diggable_3
   - first:
-      213: 7336101229685762960
-    second: walk_down_4
+      213: -7653422381621493071
+    second: Desert_Diggable_4
   - first:
-      213: 7147104057334793213
-    second: walk_down_5
+      213: -7934410018049813865
+    second: Desert_Diggable_5
   - first:
-      213: 71161275992203736
-    second: walk_side_0
+      213: -1407447296750967391
+    second: Desert_Diggable_6
   - first:
-      213: -2800817519930597349
-    second: walk_up_0
+      213: -467706237855001454
+    second: Desert_Diggable_7
   - first:
-      213: 3968942655698240512
-    second: walk_up_1
+      213: -3051927061640222878
+    second: Desert_Diggable_8
   - first:
-      213: 2995873297723078041
-    second: walk_side_1
+      213: -1358765008650398090
+    second: Desert_Diggable_9
   - first:
-      213: 599249679185649459
-    second: walk_side_2
+      213: 7034421231823046880
+    second: Desert_Diggable_10
   - first:
-      213: -630622959653776542
-    second: walk_up_2
+      213: 2744203339711232976
+    second: Desert_Diggable_11
   - first:
-      213: -8901670582188349258
-    second: walk_side_3
+      213: -5650072580441409445
+    second: Desert_Diggable_12
   - first:
-      213: 7702308096081687612
-    second: walk_up_3
+      213: -8574029673460774433
+    second: Desert_Diggable_13
   - first:
-      213: 639001369261359549
-    second: walk_side_4
+      213: 6832449657496567949
+    second: Desert_Diggable_14
   - first:
-      213: -8830854431130173343
-    second: walk_up_4
+      213: -1973259606076729787
+    second: Desert_Diggable_15
   - first:
-      213: 1061444265554218922
-    second: walk_side_5
+      213: -2199319845464223143
+    second: Desert_Diggable_16
   - first:
-      213: 8624471844156393475
-    second: walk_up_5
+      213: -1759474534832286687
+    second: Desert_Diggable_17
   - first:
-      213: -3348480833083253201
-    second: idle_front_0
+      213: -7191382830157289579
+    second: Desert_Diggable_18
   - first:
-      213: 549338110009861564
-    second: idle_front_1
+      213: -5230215501996847772
+    second: Desert_Diggable_19
   - first:
-      213: 3683367037902115358
-    second: idle_front_2
+      213: -7845208932567842193
+    second: Desert_Diggable_20
   - first:
-      213: 8195122625500797817
-    second: idle_front_3
+      213: 8636679112729895308
+    second: Desert_Diggable_21
   - first:
-      213: 9205846896055698974
-    second: idle_side_0
+      213: -8270267077873817711
+    second: Desert_Diggable_22
   - first:
-      213: -431424196194926696
-    second: idle_side_1
+      213: 4152591736401365435
+    second: Desert_Diggable_23
   - first:
-      213: -2843639765715278202
-    second: idle_side_2
+      213: -7803263862351080918
+    second: Desert_Diggable_24
   - first:
-      213: 8812081692892519168
-    second: idle_side_3
+      213: 7485987895746744433
+    second: Desert_Diggable_25
   - first:
-      213: 2013586525540863203
-    second: idle_back_0
+      213: -1920719855908988790
+    second: Desert_Diggable_26
   - first:
-      213: 4476163295602093152
-    second: idle_back_1
+      213: 6922567768567997211
+    second: Desert_Diggable_27
   - first:
-      213: 3754533843306988876
-    second: idle_back_2
+      213: 248916013404542680
+    second: Desert_Diggable_28
   - first:
-      213: -7299380774268489173
-    second: idle_back_3
+      213: 3406635367909553681
+    second: Desert_Diggable_29
+  - first:
+      213: -8261226495306898618
+    second: Desert_Diggable_30
+  - first:
+      213: 8057434050771868845
+    second: Desert_Diggable_31
+  - first:
+      213: 1557017414886919037
+    second: Desert_Diggable_32
+  - first:
+      213: 475795003796298652
+    second: Desert_Diggable_33
+  - first:
+      213: 6867868875471859811
+    second: Desert_Diggable_34
+  - first:
+      213: -6396357819188747259
+    second: Desert_Diggable_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -158,7 +176,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -170,7 +188,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -182,7 +200,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -193,631 +211,757 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_down_1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 71
-        width: 24
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cabf53a4d55974a30800000000000000
-      internalID: 4199489405455825836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_down_0
+      name: Desert_Diggable_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 71
-        width: 23
-        height: 35
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f21447f25328c60800000000000000
-      internalID: 7818870380998766407
+      spriteID: d1863bb5294444710800000000000000
+      internalID: 1676540356683065373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_down_2
+      name: Desert_Diggable_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 71
-        width: 23
-        height: 35
+        x: 32
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7da0389c0918f500800000000000000
-      internalID: 430121306297511291
+      spriteID: 0b1c6acdc1a5a14c0800000000000000
+      internalID: -4316038212873698896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_down_3
+      name: Desert_Diggable_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 71
-        width: 23
-        height: 35
+        x: 64
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 246af385c104cc890800000000000000
-      internalID: -7436498394211703230
+      spriteID: 17153755d1c663eb0800000000000000
+      internalID: -4740482684517396111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_down_4
+      name: Desert_Diggable_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 71
-        width: 23
-        height: 35
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09be9b733311fc560800000000000000
-      internalID: 7336101229685762960
+      spriteID: 6f2291ab270fb0070800000000000000
+      internalID: 8073811132530893558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_down_5
+      name: Desert_Diggable_4
       rect:
         serializedVersion: 2
-        x: 120
-        y: 71
-        width: 23
-        height: 35
+        x: 128
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3813ee54d9f2360800000000000000
-      internalID: 7147104057334793213
+      spriteID: 1b24d6bb4e499c590800000000000000
+      internalID: -7653422381621493071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_side_0
+      name: Desert_Diggable_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 24
-        height: 33
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d16741bdc0dcf000800000000000000
-      internalID: 71161275992203736
+      spriteID: 79217db702053e190800000000000000
+      internalID: -7934410018049813865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_up_0
+      name: Desert_Diggable_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5231df32eb77ce0800000000000000
+      internalID: -1407447296750967391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2941b6997af5289f0800000000000000
+      internalID: -467706237855001454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267688ad18065a5d0800000000000000
+      internalID: -3051927061640222878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67699267c62b42de0800000000000000
+      internalID: -1358765008650398090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8474327d84f9160800000000000000
+      internalID: 7034421231823046880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbbde6e56e551620800000000000000
+      internalID: 2744203339711232976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b587d976ce8e691b0800000000000000
+      internalID: -5650072580441409445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd946bb607de20980800000000000000
+      internalID: -8574029673460774433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8082dc73ccb1de50800000000000000
+      internalID: 6832449657496567949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5465b22d7d29d94e0800000000000000
+      internalID: -1973259606076729787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95253a7c0427a71e0800000000000000
+      internalID: -2199319845464223143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124d9ff8b371597e0800000000000000
+      internalID: -1759474534832286687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597a1a4ea63133c90800000000000000
+      internalID: -7191382830157289579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d8cb836ba8a67b0800000000000000
+      internalID: -5230215501996847772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f628291aa08302390800000000000000
+      internalID: -7845208932567842193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c812d49d4e5abd770800000000000000
+      internalID: 8636679112729895308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19729b119eb1a3d80800000000000000
+      internalID: -8270267077873817711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb90d61de28f0a930800000000000000
+      internalID: 4152591736401365435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22dbe35cdc35b390800000000000000
+      internalID: -7803263862351080918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170dbd6245293e760800000000000000
+      internalID: 7485987895746744433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88518ba77b3855e0800000000000000
+      internalID: -1920719855908988790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13601b45b6e11060800000000000000
+      internalID: 6922567768567997211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d652ed9bc3547300800000000000000
+      internalID: 248916013404542680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116f78761dcc64f20800000000000000
+      internalID: 3406635367909553681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643ef2ab54a3a5d80800000000000000
+      internalID: -8261226495306898618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacd46d3491c1df60800000000000000
+      internalID: 8057434050771868845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b8e63e613ab9510800000000000000
+      internalID: 1557017414886919037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b1f2bf80d5a9600800000000000000
+      internalID: 475795003796298652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360367eca529f4f50800000000000000
+      internalID: 6867868875471859811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_Diggable_35
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b10a8d31e4f7129d0800000000000000
-      internalID: -2800817519930597349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_up_1
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0040ac62154841730800000000000000
-      internalID: 3968942655698240512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_side_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 37
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 995bcd634ea739920800000000000000
-      internalID: 2995873297723078041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_side_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 37
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33f90a38866f05800800000000000000
-      internalID: 599249679185649459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_up_2
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26391a662c39f37f0800000000000000
-      internalID: -630622959653776542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_side_3
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 37
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b86e11c4c9e67480800000000000000
-      internalID: -8901670582188349258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_up_3
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c347091a76814ea60800000000000000
-      internalID: 7702308096081687612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_side_4
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 37
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db1cfc91c503ed800800000000000000
-      internalID: 639001369261359549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_up_4
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1604d49cea0827580800000000000000
-      internalID: -8830854431130173343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_side_5
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 37
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaf0c3d8fe10bbe00800000000000000
-      internalID: 1061444265554218922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_up_5
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 0
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 308cc46a27740b770800000000000000
-      internalID: 8624471844156393475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_front_0
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 66
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2e5ede5c6ec781d0800000000000000
-      internalID: -3348480833083253201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_front_1
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 66
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb5e8bcb914af9700800000000000000
-      internalID: 549338110009861564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_front_2
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 66
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e12d98f3ec2fd1330800000000000000
-      internalID: 3683367037902115358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_front_3
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 66
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97bddb7bb9ceab170800000000000000
-      internalID: 8195122625500797817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_side_0
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 33
-        width: 21
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1648003afcb1cf70800000000000000
-      internalID: 9205846896055698974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_side_1
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 33
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89ffa46baf5430af0800000000000000
-      internalID: -431424196194926696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_side_2
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 33
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 686ad5703bc5988d0800000000000000
-      internalID: -2843639765715278202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_side_3
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 33
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00bd49c7c9dca4a70800000000000000
-      internalID: 8812081692892519168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_back_0
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ec406bc642b1fb10800000000000000
-      internalID: 2013586525540863203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_back_1
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06c21073dc68e1e30800000000000000
-      internalID: 4476163295602093152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_back_2
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c45ce7b53a8ca1430800000000000000
-      internalID: 3754533843306988876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_back_3
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b22396d0cd363ba90800000000000000
-      internalID: -7299380774268489173
+      spriteID: 50466fae3729b37a0800000000000000
+      internalID: -6396357819188747259
       vertices: []
       indices: 
       edges: []
@@ -825,7 +969,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a3888b9afa28e5a44bf72da13ce918bd
+    spriteID: cc8049a22a3375d4fbba9d0075b8cac0
     internalID: 0
     vertices: []
     indices: 
