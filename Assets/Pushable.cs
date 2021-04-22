@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class Pushable : MonoBehaviour
 {
-    public bool grabbed = false;
+    public bool grabbed = false, prevFrameGrabbed = false;
+    public bool pushed = false;
     public GameObject player;
+    public Vector2 prevFramePlayerPos;
+    public Rigidbody2D rb2d;
 
     public void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Update(){
-        if(grabbed && transform.parent == null){
-            transform.parent = player.transform;
+        if(grabbed){
+            if(prevFrameGrabbed){
+                Vector2 playerPosDelta =  (Vector2)player.transform.position - prevFramePlayerPos;
+                transform.Translate(playerPosDelta, Space.Self);
+            }
+            prevFramePlayerPos = player.transform.position;
+            prevFrameGrabbed = true;
+        }else{
+            prevFrameGrabbed = false;
         }
+
+        if(pushed){
+            transform.SetParent(player.transform);
+        }else{
+            transform.parent = null;
+        }
+
     }
 }
