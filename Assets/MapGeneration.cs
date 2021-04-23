@@ -48,7 +48,7 @@ public class MapGeneration : MonoBehaviour
             }
         }
 
-        Debug.Log("Duration in milliseconds: " + Time.realtimeSinceStartup);
+        Debug.Log("Map was built in " + Time.realtimeSinceStartup + " seconds.");
     }
 
     void SurroundMapWithWalls(){

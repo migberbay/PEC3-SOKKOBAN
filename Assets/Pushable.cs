@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pushable : MonoBehaviour
 {
     public bool grabbed = false, prevFrameGrabbed = false;
-    public bool pushed = false;
+    public bool pushed = false, prevFramePushed = false;
     public GameObject player;
     public Vector2 prevFramePlayerPos;
     public Rigidbody2D rb2d;
@@ -27,9 +27,14 @@ public class Pushable : MonoBehaviour
         }
 
         if(pushed){
-            transform.SetParent(player.transform);
+            if(prevFramePushed){
+                Vector2 playerPosDelta =  (Vector2)player.transform.position - prevFramePlayerPos;
+                transform.Translate(playerPosDelta, Space.Self);
+            }
+            prevFramePlayerPos = player.transform.position;
+            prevFramePushed = true;
         }else{
-            transform.parent = null;
+            prevFramePushed = false;
         }
 
     }

@@ -5,8 +5,8 @@ using UnityEngine.Animations;
 
 public class MovementScript : MonoBehaviour
 {
-    public bool moving, pushing, pulling, space_pressed, shift_pressed;
-    public bool topBox, leftBox, rightBox, downBox;
+    private bool moving, pushing, pulling, space_pressed, shift_pressed;
+    private bool topBox, leftBox, rightBox, downBox;
     public GameObject h_push_top, h_push_down, h_push_left, h_push_right;
     public float orientation;// 0 = front, .5 = up, 1 = side
 
@@ -32,20 +32,21 @@ public class MovementScript : MonoBehaviour
         bool h_idle = false;
 
         // Check for box release.
-        if(!space_pressed){
-            if(grabbedBox != null){
-                grabbedBox.GetComponent<Pushable>().grabbed = false;
-                grabbedBox = null;
-                moveSpeed *= 2;
-                topBox = leftBox = rightBox = downBox = false;
-            }
+        if(!space_pressed & grabbedBox != null){          
+            grabbedBox.GetComponent<Pushable>().grabbed = false;
+            grabbedBox = null;
+            moveSpeed *= 2;
+            topBox = leftBox = rightBox = downBox = false;
         }
 
         // Check for no push
-        if(!shift_pressed){
+        else if(!shift_pressed & pushedBox != null){
             if(moveSpeed < 2){
                 moveSpeed *= 2;
             }
+            pushedBox.GetComponent<Pushable>().pushed = false;
+            pushedBox.GetComponent<BoxCollider2D>().enabled = true;
+            pushedBox = null;
             topBox = leftBox = rightBox = downBox = false;
             h_push_down.SetActive(false);
             h_push_top.SetActive(false);
@@ -55,7 +56,7 @@ public class MovementScript : MonoBehaviour
 
         // Move booleans for animation controller.
         if(h_move != 0 || v_move != 0){
-            if(grabbedBox == null){
+            if(grabbedBox == null && pushedBox == null){
                 moving  = true;
             }
         }
@@ -63,13 +64,15 @@ public class MovementScript : MonoBehaviour
         if (h_move > 0 ){ // right 
 
             orientation = 1f;
-            if(grabbedBox != null){
-                if(rightBox){
-                    pulling = true;
-                    lonk_render.flipX = true;
-                    rb2d.velocity = new Vector2(moveSpeed,0);
-                }
-            }else{
+            if(grabbedBox != null & rightBox){
+                pulling = true;
+                lonk_render.flipX = true;
+                rb2d.velocity = new Vector2(moveSpeed,0);
+            }else if(pushedBox != null & leftBox){
+                pushing = true;
+                lonk_render.flipX = false;
+                rb2d.velocity = new Vector2(moveSpeed,0);
+            }else if(!shift_pressed && !space_pressed){
                 lonk_render.flipX = false;
                 rb2d.velocity = new Vector2(moveSpeed,0);
             }
@@ -77,13 +80,15 @@ public class MovementScript : MonoBehaviour
         }else if(h_move < 0){// left
 
             orientation = 1f;
-            if(grabbedBox != null){
-                if(leftBox){
-                    pulling = true;
-                    lonk_render.flipX = false;
-                    rb2d.velocity = new Vector2(-moveSpeed,0);
-                }
-            }else{
+            if(grabbedBox != null & leftBox){
+                pulling = true;
+                lonk_render.flipX = false;
+                rb2d.velocity = new Vector2(-moveSpeed,0);
+            }else if(pushedBox != null & rightBox){
+                pushing = true;
+                lonk_render.flipX = true;
+                rb2d.velocity = new Vector2(-moveSpeed,0);
+            }else if(!shift_pressed && !space_pressed){
                 lonk_render.flipX = true;
                 rb2d.velocity = new Vector2(-moveSpeed,0);
             }
@@ -95,28 +100,32 @@ public class MovementScript : MonoBehaviour
         if(h_idle){ // priorize horizontal movement.
             if(v_move > 0){ // up
 
-                if(grabbedBox != null){     
-                    if(topBox){
-                        pulling = true;
-                        orientation = 0f;
-                        rb2d.velocity = new Vector2(0,moveSpeed);
-                    }
-                }else{
+                if(grabbedBox != null & topBox){     
+                    pulling = true;
+                    orientation = 0f;
+                    rb2d.velocity = new Vector2(0,moveSpeed);
+                }else if(pushedBox != null & downBox){
+                    pushing = true;
+                    orientation = .5f;
+                    rb2d.velocity = new Vector2(0,moveSpeed);
+                }else if(!shift_pressed && !space_pressed){
                     orientation = .5f;
                     rb2d.velocity = new Vector2(0,moveSpeed);
                 }
 
             }else if(v_move < 0){// down
 
-                if(grabbedBox != null){
-                    if(downBox){
-                        pulling = true;
-                        orientation = .5f;
-                        rb2d.velocity = new Vector2(0,-moveSpeed);
-                    }
-                }else{
+                if(grabbedBox != null & downBox){
+                    pulling = true;
+                    orientation = .5f;
+                    rb2d.velocity = new Vector2(0,-moveSpeed);
+                }else if(pushedBox != null & topBox){
+                    pushing = true;
                     orientation = 0f;
-                     rb2d.velocity = new Vector2(0,-moveSpeed);
+                    rb2d.velocity = new Vector2(0,-moveSpeed);
+                }else if(!shift_pressed && !space_pressed){
+                    orientation = 0f;
+                    rb2d.velocity = new Vector2(0,-moveSpeed);
                 }
 
             }else{ 
@@ -142,7 +151,6 @@ public class MovementScript : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D col) {
         if(col.transform.tag == "Pushable"){
-
             if(space_pressed){
                 col.transform.GetComponent<Pushable>().grabbed = true;
                 grabbedBox = col.transform.gameObject;
@@ -151,11 +159,16 @@ public class MovementScript : MonoBehaviour
                 }
                 BoxPosCompute(col.GetContact(0).normal);
             }
+
             else if(shift_pressed){
                 BoxPosCompute(col.GetContact(0).normal);
                 if(moveSpeed > 2){
                     moveSpeed /=2;
                 }
+                
+                col.transform.GetComponent<Pushable>().pushed = true;
+                pushedBox = col.transform.gameObject;
+                col.transform.GetComponent<BoxCollider2D>().enabled = false;
 
                 if(rightBox){
                     h_push_right.SetActive(true);
