@@ -30,6 +30,7 @@ public class MapGeneration : MonoBehaviour
     public GameObject WallSolo;
     public GameObject WallTopRightLeft, WallTopRight, WallTopLeft, WallTop, WallLeft, WallRight, WallFull, WallLeftRight;
 
+    public Transform elementHolder, mapHolder;
 
     void Start()
     {
@@ -114,10 +115,31 @@ public class MapGeneration : MonoBehaviour
             toInstantiate = floorTiles[3];
         }
 
-        GameObject.Instantiate(toInstantiate,new Vector3(col,-row), Quaternion.identity);
+        var instance = GameObject.Instantiate(toInstantiate,new Vector3(col,-row), Quaternion.identity);
+        instance.transform.SetParent(mapHolder);
     }
 
     void SpawnGeneric(int row, int col, int element){
+        
+        GameObject toInstantiate;
+        // 0 = air, 1 = wall, 2 = Box, 3 = Portal, -1 = link spawn
+
+        if(element == 2){
+            toInstantiate = box;
+        }else if(element == 3){
+            toInstantiate = portal;
+        }else if(element == -1){
+            toInstantiate = link;
+        }else if(element == 0){
+            toInstantiate = null;
+        }else{
+            Debug.Log("adding not contemplated element: " + element);
+            toInstantiate = floorTiles[0];
+        }
+        if(toInstantiate != null){
+            var instance = GameObject.Instantiate(toInstantiate, new Vector3(col,-row), Quaternion.identity);
+            instance.transform.SetParent(elementHolder);
+        }
         
     }
 
@@ -151,11 +173,13 @@ public class MapGeneration : MonoBehaviour
         switch (bin_val)
         {
             case "0000":
-                GameObject.Instantiate(WallSolo,new Vector3(col,-row), Quaternion.identity);
+                var instance = GameObject.Instantiate(WallSolo,new Vector3(col,-row), Quaternion.identity);
+                instance.transform.SetParent(mapHolder);
                 break;
 
             case "0001":
-                GameObject.Instantiate(WallTopRightLeft,new Vector3(col,-row), Quaternion.identity);
+                var instance1 = GameObject.Instantiate(WallTopRightLeft,new Vector3(col,-row), Quaternion.identity);
+                instance1.transform.SetParent(mapHolder);
                 break;
 
             // case "0010":
@@ -164,7 +188,8 @@ public class MapGeneration : MonoBehaviour
             //     break;
             
             case "0011":
-                GameObject.Instantiate(WallTopRight,new Vector3(col,-row), Quaternion.identity);
+                var instance2 = GameObject.Instantiate(WallTopRight,new Vector3(col,-row), Quaternion.identity);
+                instance2.transform.SetParent(mapHolder);
                 break;
             
             // case "0100":
@@ -173,7 +198,8 @@ public class MapGeneration : MonoBehaviour
             //     break;
 
             case "0101":
-                GameObject.Instantiate(WallTopLeft,new Vector3(col,-row), Quaternion.identity);
+                var instance3 = GameObject.Instantiate(WallTopLeft,new Vector3(col,-row), Quaternion.identity);
+                instance3.transform.SetParent(mapHolder);
                 break;
 
             // case "0110":
@@ -182,43 +208,53 @@ public class MapGeneration : MonoBehaviour
             //     break;
             
             case "0111":
-                GameObject.Instantiate(WallTop,new Vector3(col,-row), Quaternion.identity);
+                var instance4 = GameObject.Instantiate(WallTop,new Vector3(col,-row), Quaternion.identity);
+                instance4.transform.SetParent(mapHolder);
                 break;
 
             case "1000":
-                GameObject.Instantiate(FrontWallNoConnection,new Vector3(col,-row), Quaternion.identity);
+                var instance5 = GameObject.Instantiate(FrontWallNoConnection,new Vector3(col,-row), Quaternion.identity);
+                instance5.transform.SetParent(mapHolder);
                 break;
 
             case "1001":
-                GameObject.Instantiate(WallLeftRight,new Vector3(col,-row), Quaternion.identity);
+                var instance6 = GameObject.Instantiate(WallLeftRight,new Vector3(col,-row), Quaternion.identity);
+                instance6.transform.SetParent(mapHolder);
                 break;
             
             case "1010":
-                GameObject.Instantiate(FrontWallRightConnection,new Vector3(col,-row), Quaternion.identity);
+                var instance7 = GameObject.Instantiate(FrontWallRightConnection,new Vector3(col,-row), Quaternion.identity);
+                instance7.transform.SetParent(mapHolder);
                 break;
             
             case "1011":
-                GameObject.Instantiate(WallRight,new Vector3(col,-row), Quaternion.identity);
+                var instance8 = GameObject.Instantiate(WallRight,new Vector3(col,-row), Quaternion.identity);
+                instance8.transform.SetParent(mapHolder);
                 break;
             
             case "1100":
-                GameObject.Instantiate(FrontWallLeftConnection,new Vector3(col,-row), Quaternion.identity);
+                var instance9 = GameObject.Instantiate(FrontWallLeftConnection,new Vector3(col,-row), Quaternion.identity);
+                instance9.transform.SetParent(mapHolder);
                 break;
             
             case "1101":
-                GameObject.Instantiate(WallLeft,new Vector3(col,-row), Quaternion.identity);
+                var instance10 = GameObject.Instantiate(WallLeft,new Vector3(col,-row), Quaternion.identity);
+                instance10.transform.SetParent(mapHolder);
                 break;
 
             case "1110":
-                GameObject.Instantiate(FrontWallBothConnections,new Vector3(col,-row), Quaternion.identity);
+                var instance11 = GameObject.Instantiate(FrontWallBothConnections,new Vector3(col,-row), Quaternion.identity);
+                instance11.transform.SetParent(mapHolder);
                 break;
             
             case "1111":
-                GameObject.Instantiate(WallFull,new Vector3(col,-row), Quaternion.identity);
+                var instance12 = GameObject.Instantiate(WallFull,new Vector3(col,-row), Quaternion.identity);
+                instance12.transform.SetParent(mapHolder);
                 break;
 
             default:
-                GameObject.Instantiate(WallSolo,new Vector3(col,-row), Quaternion.identity);
+                var instance13 = GameObject.Instantiate(WallSolo,new Vector3(col,-row), Quaternion.identity);
+                instance13.transform.SetParent(mapHolder);
                 break;
         }
     }
