@@ -19,22 +19,20 @@ public class PortalLogic : MonoBehaviour
             blocks = GameObject.FindGameObjectsWithTag("Pushable");
         }
 
-        foreach(var b in blocks){
-            Pushable p = b.GetComponent<Pushable>();
-            if(!set){
+        if(!set){
+            foreach(var b in blocks){
+                Pushable p = b.GetComponent<Pushable>();
                 if(!p.grabbed && !p.pushed && Vector2.Distance(b.transform.position, this.transform.position)< 0.25f){
                     b.transform.position = this.transform.position;
                     set_block = b;
-                    set = true;
-                }
-            }else{
-                if(Vector2.Distance(b.transform.position, this.transform.position) > 0.25f){
-                    set = false;
-                    set_block = null;
+                    set = true;   
                 }
             }
         }
-
+        else if(Vector2.Distance(set_block.transform.position, this.transform.position) > 0.25f){
+                set = false;
+                set_block = null;     
+            }
         StartCoroutine(CheckForBlockOnTop());
     }
 }

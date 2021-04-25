@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using System.IO;
 
 [System.Serializable]
 public class Row{
@@ -12,12 +12,19 @@ public class Row{
         rowdata = new int[size];
     }
 }
-
+[System.Serializable]
+public class Map{
+    public Row[] map;
+}
 
 public class MapGeneration : MonoBehaviour
 {
     // 0 = air, 1 = wall, 2 = Box, 3 = Portal, -1 = link spawn
     public Row[] mapLayout;
+
+    public string base_path = "Assets/Resources/Level-";
+    public int stage = 1;
+    public GameObject Camera;
 
     public GameObject[] floorTiles; // 2nd & 3rd position 5% weight
     public GameObject box, portal, link;
@@ -34,8 +41,10 @@ public class MapGeneration : MonoBehaviour
 
     void Start()
     {
+        // LoadMapIntoJson();
+        LoadMapFromFile();
         SurroundMapWithWalls();
-
+        AdjustCameraToMap();
         for (int row = 0; row < mapLayout.Length; row++)
         {
             for(int col = 0; col < mapLayout[row].rowdata.Length; col++){
@@ -48,8 +57,41 @@ public class MapGeneration : MonoBehaviour
                 }  
             }
         }
-
         Debug.Log("Map was built in " + Time.realtimeSinceStartup + " seconds.");
+    }
+
+    public void LoadMapIntoJson(){
+        // Max size = W:28, H:14;
+        Map m = new Map();
+        m.map = new Row[5];
+        for (int i = 0; i < 5; i++)
+        {
+            Row r = new Row(3);
+            r.rowdata = new int [3] {0,0,0};
+            m.map[i] = r;
+        }
+        var txt = JsonUtility.ToJson(m);
+    }
+
+    public void LoadMapFromFile(){
+        string path = base_path + stage+".json";
+        StreamReader reader = new StreamReader(path); 
+        string text =  reader.ReadToEnd();
+
+        Map map = JsonUtility.FromJson<Map>(text);
+        reader.Close();
+
+        mapLayout = new Row[map.map.Length];
+        for (int i = 0; i < map.map.Length; i++)
+        {   
+            mapLayout[i] = map.map[i];
+        }
+    }
+
+    public void AdjustCameraToMap(){
+        int width = mapLayout[0].rowdata.Length;
+        int height = mapLayout.Length;
+        Camera.transform.position = new Vector3(width/2 -0.5f, -height/2 +0.5f, -10);
     }
 
     void SurroundMapWithWalls(){
@@ -96,7 +138,6 @@ public class MapGeneration : MonoBehaviour
             {
                 str += val+" ";
             }
-            // Debug.Log(str);
         }
     }
 
