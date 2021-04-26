@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.IO;
+using MapGen;
 
-[System.Serializable]
-public class Row{
-    public int[] rowdata;
+namespace MapGen
+{
+    [System.Serializable]
+    public class Row{
+        public int[] rowdata;
 
-    public Row(int size){
-        rowdata = new int[size];
+        public Row(int size){
+            rowdata = new int[size];
+        }
     }
-}
-[System.Serializable]
-public class Map{
-    public Row[] map;
+
+    [System.Serializable]
+    public class Map{
+        public Row[] map;
+    }
 }
 
 public class MapGeneration : MonoBehaviour
@@ -41,7 +46,6 @@ public class MapGeneration : MonoBehaviour
 
     void Start()
     {
-        // LoadMapIntoJson();
         LoadMapFromFile();
         SurroundMapWithWalls();
         AdjustCameraToMap();
@@ -58,19 +62,6 @@ public class MapGeneration : MonoBehaviour
             }
         }
         Debug.Log("Map was built in " + Time.realtimeSinceStartup + " seconds.");
-    }
-
-    public void LoadMapIntoJson(){
-        // Max size = W:28, H:14;
-        Map m = new Map();
-        m.map = new Row[5];
-        for (int i = 0; i < 5; i++)
-        {
-            Row r = new Row(3);
-            r.rowdata = new int [3] {0,0,0};
-            m.map[i] = r;
-        }
-        var txt = JsonUtility.ToJson(m);
     }
 
     public void LoadMapFromFile(){
