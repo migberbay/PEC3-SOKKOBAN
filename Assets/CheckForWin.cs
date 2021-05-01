@@ -9,19 +9,17 @@ public class CheckForWin : MonoBehaviour
     public GameObject[] allPortals;
     public bool allSet = false;
     public int setCount = 0;
-    public TMP_Text win;
+    public LevelLoader loader;
+    
 
-    void Start()
-    {
-        StartCoroutine(CheckAllSet());
+    private void Start(){
+        loader = GameObject.FindObjectOfType<LevelLoader>().GetComponent<LevelLoader>();
     }
 
     public IEnumerator CheckAllSet(){
         yield return new WaitForSeconds(2.5f);
-        if(allPortals.Length == 0){
-            allPortals = GameObject.FindGameObjectsWithTag("Portal");
-        }
-
+        allPortals = GameObject.FindGameObjectsWithTag("Portal");
+        
         setCount = 0;
         foreach(var p in allPortals){
             PortalLogic pl = p.GetComponent<PortalLogic>();
@@ -31,7 +29,7 @@ public class CheckForWin : MonoBehaviour
         }
 
         if(setCount == allPortals.Length){
-            win.text = "You win.";
+            loader.LoadNext();
         }else{
             StartCoroutine(CheckAllSet());
         }

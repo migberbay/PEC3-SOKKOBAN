@@ -44,8 +44,9 @@ public class MapGeneration : MonoBehaviour
 
     public Transform elementHolder, mapHolder;
 
-    void Start()
+    public void LoadMap()
     {
+        DestroyPreviousMap();
         LoadMapFromFile();
         SurroundMapWithWalls();
         AdjustCameraToMap();
@@ -64,8 +65,18 @@ public class MapGeneration : MonoBehaviour
         Debug.Log("Map was built in " + Time.realtimeSinceStartup + " seconds.");
     }
 
+    public void DestroyPreviousMap(){
+        foreach (Transform child in elementHolder) {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        foreach (Transform child in mapHolder) {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
+
     public void LoadMapFromFile(){
-        string path = base_path + stage+".json";
+        string path = base_path + stage +".json";
         StreamReader reader = new StreamReader(path); 
         string text =  reader.ReadToEnd();
 

@@ -150,7 +150,7 @@ public class MovementScript : MonoBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D col) {
-        if(col.transform.tag == "Pushable"){
+        if(col.transform.tag == "Pushable" && col.transform.gameObject.GetComponent<Pushable>().player == null){
             if(space_pressed){
                 col.transform.GetComponent<Pushable>().grabbed = true;
                 grabbedBox = col.transform.gameObject;

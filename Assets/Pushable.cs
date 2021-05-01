@@ -9,6 +9,7 @@ public class Pushable : MonoBehaviour
     public GameObject[] players;
     public Vector2 prevFramePlayerPos;
     public Rigidbody2D rb2d;
+    public GameObject player;
 
     public void Start(){
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -16,7 +17,7 @@ public class Pushable : MonoBehaviour
 
     public void Update(){
         if(grabbed){
-            var player = GetClosestPlayer();
+            player = GetClosestPlayer();
             if(prevFrameGrabbed){
                 Vector2 playerPosDelta = (Vector2)player.transform.position - prevFramePlayerPos;
                 transform.Translate(playerPosDelta, Space.Self);
@@ -28,7 +29,7 @@ public class Pushable : MonoBehaviour
         }
 
         if(pushed){
-            var player = GetClosestPlayer();
+            player = GetClosestPlayer();
             if(prevFramePushed){
                 Vector2 playerPosDelta =  (Vector2)player.transform.position - prevFramePlayerPos;
                 transform.Translate(playerPosDelta, Space.Self);
@@ -39,6 +40,16 @@ public class Pushable : MonoBehaviour
             prevFramePushed = false;
         }
 
+        if(player != null){
+            var ms = player.GetComponent<MovementScript>();
+            if(ms.grabbedBox == null && ms.pushedBox == null){
+                grabbed = pushed = prevFrameGrabbed = prevFramePushed = false;
+                GetComponent<BoxCollider2D>().enabled = true;
+                player = null;
+            }
+        }
+        
+
     }
 
     public GameObject GetClosestPlayer(){
@@ -46,6 +57,9 @@ public class Pushable : MonoBehaviour
         GameObject res = null;
 
         foreach(var p in players){
+            if(p == null)
+                continue;
+                
             var d = Vector2.Distance(transform.position, p.transform.position);
             if(d < minDist){
                 res = p;
