@@ -4,14 +4,12 @@ using UnityEngine;
 using MapGen;
 using UnityEngine.UI;
 using System.IO;
-
+using UnityEngine.SceneManagement;
 
 
 public class MapManager : MonoBehaviour
 {
     public int cols, rows, levelNumber, selectedElement = 1;
-    bool newmap = true;
-
     public Sprite[] placeables;
     public int[] representation = new int[] {-1,0,1,2,3};
     public GameObject[] buttons;
@@ -19,30 +17,34 @@ public class MapManager : MonoBehaviour
     public Camera mainCam;
     public Map layout = new Map();
     public GameObject GridElementPrefab;
+    MenuController controller;
 
     string base_path = "Assets/Resources/Level-";
 
 
     void Start()
     {
-        if(newmap){
-            layout.map = new Row[rows];
-            for (int i = 0; i < rows; i++)
-            {
-                Row r = new Row(cols);
-                for (int j = 0; j < cols; j++)
-                {
-                    r.rowdata[j] = 0;
-                    var e = GameObject.Instantiate(GridElementPrefab, new Vector2(j - cols/2, -i + rows/2), Quaternion.identity, this.transform);
-                    GridElement ge = e.GetComponent<GridElement>();
-                    ge.s_renderer.sprite = placeables[1];
-                    ge.layout_x = j;
-                    ge.layout_y = i;
-                }
-                layout.map[i] = r;
-            }
-        }else{
+        controller = GameObject.FindObjectOfType<MenuController>();
+        rows = controller.heightOnChange;
+        cols = controller.widthOnChange;
+        levelNumber = controller.levelToLoad;
 
+        Destroy(controller.gameObject);
+
+        layout.map = new Row[rows];
+        for (int i = 0; i < rows; i++)
+        {
+            Row r = new Row(cols);
+            for (int j = 0; j < cols; j++)
+            {
+                r.rowdata[j] = 0;
+                var e = GameObject.Instantiate(GridElementPrefab, new Vector2(j - cols/2, -i + rows/2), Quaternion.identity, this.transform);
+                GridElement ge = e.GetComponent<GridElement>();
+                ge.s_renderer.sprite = placeables[1];
+                ge.layout_x = j;
+                ge.layout_y = i;
+            }
+            layout.map[i] = r;
         }
     }
 
@@ -57,7 +59,8 @@ public class MapManager : MonoBehaviour
         var txt = JsonUtility.ToJson(layout);
         Debug.Log(txt);
         
-        File.WriteAllText(path, txt);   
+        File.WriteAllText(path, txt);
+        SceneManager.LoadScene("Menu");
     }
 
     public void LoadMapFromFile(){

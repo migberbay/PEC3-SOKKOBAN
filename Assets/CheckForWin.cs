@@ -10,7 +10,6 @@ public class CheckForWin : MonoBehaviour
     public bool allSet = false;
     public int setCount = 0;
     public LevelLoader loader;
-    
 
     private void Start(){
         loader = GameObject.FindObjectOfType<LevelLoader>().GetComponent<LevelLoader>();

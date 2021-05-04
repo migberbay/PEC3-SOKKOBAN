@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class LevelLoader : MonoBehaviour
     List<int> levels = new List<int>();
     int current_level = 0, current_level_index = 0;
     public GameObject endOfLevelsCard;
+    public MenuController controller;
+    public int resetKeyDownForFixedUpdates = 0, quitKeyDownForFixedUpdates = 0;
+    bool hasReset = false;
     
 
     private void Awake() {
@@ -21,7 +25,9 @@ public class LevelLoader : MonoBehaviour
             }
         }
         // TODO: setup current level from level selector
-        current_level = 3;
+        controller = GameObject.FindObjectOfType<MenuController>();
+        current_level = controller.levelToLoad;
+        Destroy(controller.gameObject);
         current_level_index = levels.IndexOf(current_level);
     }
 
@@ -55,7 +61,29 @@ public class LevelLoader : MonoBehaviour
     }
 
     public void ToMainMenu(){
-        // Destroy whatever dont destroy on load object we have let and load main menu scene.
-        Debug.Log("Goes back to main menu fium.");
+        SceneManager.LoadScene("Menu");
+    }
+
+    private void FixedUpdate() {
+        if(Input.GetKey(KeyCode.R)){
+            resetKeyDownForFixedUpdates ++;
+            if(resetKeyDownForFixedUpdates > 100 & !hasReset){
+                current_level_index --;
+                LoadNext();
+                hasReset = true;
+            }
+        }else{
+            resetKeyDownForFixedUpdates = 0;
+            hasReset = false;
+        }
+
+        if(Input.GetKey(KeyCode.Q)){
+            quitKeyDownForFixedUpdates ++;
+            if(quitKeyDownForFixedUpdates > 100){
+                SceneManager.LoadScene("Menu");
+            }
+        }else{
+            quitKeyDownForFixedUpdates = 0;
+        }
     }
 }
